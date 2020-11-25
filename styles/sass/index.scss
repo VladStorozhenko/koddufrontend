@@ -72,6 +72,8 @@ p,
 .header {
     margin-top: 15px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    overflow-y: visible;
+    height: 120px;
 }
 
 .header__logo {
