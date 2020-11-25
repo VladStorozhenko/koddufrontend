@@ -167,6 +167,15 @@ p,
     height: 650px;
 }
 
+.focus__background-item {
+    // position: absolute;
+}
+
+.focus__background-bottom {
+    position: absolute;
+    // height: 300px;
+}
+
 .focus__title {
     text-align: center;
     color: #fff;
@@ -192,6 +201,7 @@ p,
 // Quote
 
 .quote {
+    margin-top: 200px;
     div {
         max-width: 88%;
     }
