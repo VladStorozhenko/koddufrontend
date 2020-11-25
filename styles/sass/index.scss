@@ -167,13 +167,8 @@ p,
     height: 650px;
 }
 
-.focus__background-item {
-    // position: absolute;
-}
-
 .focus__background-bottom {
     position: absolute;
-    // height: 300px;
 }
 
 .focus__title {
@@ -194,8 +189,14 @@ p,
     padding: 50px 0 60px;
 }
 
-.areas-button {
-    margin-top: 50px;
+.areas-button__wrapper {
+    margin-top: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 999;
 }
 
 // Quote
