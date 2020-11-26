@@ -387,7 +387,7 @@ p,
         display: flex;
         flex-direction: column;
         h2 {
-            max-width: 90%;
+            max-width: 65%;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
@@ -395,11 +395,22 @@ p,
             line-height: 31px;
         }
         p {
-            max-width: 90%;
+            max-width: 65%;
             margin-left: auto;
             margin-right: auto;
             font-size: 12px;
             line-height: 18px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .fresh-perspective__content {
+        h2 {
+            max-width: 90%;
+        }
+        p {
+            max-width: 90%;
         }
     }
 }
