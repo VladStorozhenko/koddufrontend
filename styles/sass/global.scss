@@ -1,0 +1,68 @@
+// Variables
+
+$default-transition-duration: 230ms;
+
+// Global styles
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "EB Garamond", Arial, Helvetica, sans-serif;
+    // overflow-x: hidden;
+}
+
+.page {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #464646;
+    font-weight: 500;
+    transition-duration: $default-transition-duration;
+    &:hover {
+        transition-duration: $default-transition-duration;
+    }
+}
+
+p,
+a,
+span {
+    color: #525252;
+    transition-duration: $default-transition-duration;
+    &:hover {
+        transition-duration: $default-transition-duration;
+    }
+}
+
+main {
+    padding: 0 5px;
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+.button,
+p,
+.mail {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.button {
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: #38bda2;
+    font-weight: 500;
+}
