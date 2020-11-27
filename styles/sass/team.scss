@@ -1,14 +1,8 @@
-// * title
-
-.team__title {
-    font-size: 72px;
-    text-align: center;
-    margin-bottom: 30px;
-}
 // * team grid
 
 .team__grid {
     display: grid;
+    margin-top: 30px;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin-left: auto;
@@ -41,18 +35,12 @@
 }
 
 @media (max-width: 1200px) {
-    .team__title {
-        font-size: 64px;
-    }
     .team__grid {
         width: 85%;
     }
 }
 
 @media (max-width: 991px) {
-    .team__title {
-        font-size: 48px;
-    }
     .team__grid {
         width: 85%;
     }
@@ -74,10 +62,6 @@
 }
 
 @media (max-width: 767px) {
-    .team__title {
-        font-size: 36px;
-        margin-top: 50px;
-    }
     .team__grid {
         width: 100%;
     }
@@ -99,28 +83,25 @@
 }
 
 @media (max-width: 575px) {
-    .team__title {
-        font-size: 24px;
-    }
     .team__grid {
         grid-template-columns: 1fr;
     }
     .member {
-        width: 150px;
+        width: 250px;
         .member__photo {
-            height: 200px;
+            height: 350px;
         }
         .member__content {
             .member__name {
-                font-size: 18px;
+                font-size: 20px;
             }
             .member__post {
                 margin-top: 3px;
-                font-size: 10px;
+                font-size: 12px;
             }
             .member__info {
-                width: 150px;
-                font-size: 12px;
+                width: 100%;
+                font-size: 14px;
             }
         }
     }

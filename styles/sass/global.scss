@@ -18,6 +18,36 @@ body {
     overflow-x: hidden;
 }
 
+.page__title {
+    font-size: 72px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .page__title {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 991px) {
+    .page__title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page__title {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .page__title {
+        font-size: 24px;
+    }
+}
+
 h1,
 h2,
 h3,
