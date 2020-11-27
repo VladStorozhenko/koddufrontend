@@ -1,0 +1,125 @@
+// * text
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #38BDA2;
+    &:hover {
+        color: #38BDA2;
+    }
+}
+
+.form__text {
+    margin: 40px 0;
+}
+
+.form {
+    .form-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-label {
+        display: flex;
+        flex-direction: column;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        input {
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+            width: 340px;
+            margin-top: 5px;
+            padding: 5px;
+        }
+    }
+    .form-action__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .submit__wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 60px;
+    }
+    .checkbox-container {
+        position: relative;
+        user-select: none;
+        padding-left: 35px;
+        cursor: pointer;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~ .checkmark:after {
+                display: block;
+            }
+        }
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+                left: 9px;
+                top: 5px;
+                width: 5px;
+                height: 10px;
+                border: solid #38BDA2;
+                border-width: 0 2px 3px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.form-under {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .form__text {
+        font-size: 14px;
+    }
+    .form {
+        font-size: 14px;
+    }
+    .form-under {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .form {
+        width: 100%;
+        .form-label {
+            input {
+                width: 100%;
+            }
+        }
+        .submit__wrapper {
+            margin: 20px 0 40px;
+        }
+    }
+    .form-under {
+        p {
+            width: 70%;
+            text-align: center;
+        }
+    }
+}

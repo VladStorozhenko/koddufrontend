@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/global.min.css">
-    <link rel="stylesheet" href="../styles/contact.min.css">
+    <link rel="stylesheet" href="../styles/login-signup.min.css">
     <link rel="stylesheet" href="../styles/header.min.css">
     <link rel="stylesheet" href="../styles/footer.min.css">
     <!-- Fonts -->
@@ -33,7 +33,7 @@
                         <a class="header__nav__link" href="./about.html">About</a>
                         <a class="header__nav__link" href="./solutions.html">Solutions</a>
                         <a class="header__nav__link" href="./team.html">Our team</a>
-                        <a class="header__nav__link  header__active-link" href="./contact.html">Contact us</a>
+                        <a class="header__nav__link" href="./contact.html">Contact us</a>
                     </nav>
                 </div>
 
@@ -70,7 +70,7 @@
                             <a class="header__nav__link" href="./team.html">Our team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="header__nav__link header__active-link" href="./contact.html">Contact us</a>
+                            <a class="header__nav__link" href="./contact.html">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -84,55 +84,37 @@
         <main class="main">
             <!-- ! CONTENT GOES HERE -->
             <h1 class="page__title">
-                Contact us
+                Log in
             </h1>
-            <p class="contact__text">
-                To help us best serve your inquiry, we recommend that you first describe the issue you’re having before telling us what you want to achieve. You may also email us to make an appointment. Our general response time is one business day.
+            <p class="form__text">
+                Use a local account to log in.
             </p>
-            <div class="contact-form__wrapper">
-                <form action="#" class="contact-form">
-                    <div class="name__wrapper">
-                        <label for="first-name" class="form-label first-name">
-                            First name *
-                            <input type="text" id="first-name">
-                        </label>
-                        <div class="gap"></div>
-                        <label for="last-name" class="form-label last-name">
-                            Last name *
-                            <input type="text" id="last-name">
-                        </label>
-                    </div>
+            <form action="#" class="form">
+                <div class="form-flex">
                     <label for="email" class="form-label">
-                        Email address *
-                        <input type="email" id="email">
+                        Email
+                        <input type="email" id="email" />
                     </label>
-                    <label for="company" class="form-label">
-                        Company *
-                        <input type="text" id="company">
+                    <label for="password" class="form-label">
+                        Password
+                        <input type="password" id="password" />
                     </label>
-                    <label for="message" class="form-label">
-                        Message *
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    </label>
-                    <label for="role" class="form-label">
-                        Role
-                        <input type="text" id="role">
-                    </label>
-                    <div class="button-wrapper">
-                        <button type="submit" class="button">Send</button>
+                    <div class="form-action__wrapper">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="link">Forgot your password?</a>
                     </div>
-                </form>
-                <div class="contact-info">
-                    <div>
-                        <a href="mailto:info@koddu.com" class="contact-info__link">Info@koddu.com</a>
-                        <div class="social-wrapper">
-                            <img src="../assets/images/instagram.svg" alt="instagram" class="social__item instagram">
-                            <img src="../assets/images/facebook.svg" alt="facebook" class="social__item facebook">
-                        </div>
-                        <p>Seattle, WA</p>
-                    </div>
-                    <img src="../assets/images/contact.svg" alt="" class="contact-info__image">
                 </div>
+                <div class="submit__wrapper">
+                    <button type="submit" class="button">Log in</button>
+                </div>
+            </form>
+            <div class="form-under">
+                <p>Don’t have an account? Register as a new user.</p>
+                <a href="./signup.html" class="link signup-link">Sign up</a>
             </div>
         </main>
     </div>
