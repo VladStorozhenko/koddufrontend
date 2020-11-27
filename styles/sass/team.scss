@@ -1,0 +1,127 @@
+// * title
+
+.team__title {
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+// * team grid
+
+.team__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.member {
+    width: 250px;
+    .member__photo {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .member__content {
+        .member__name {
+            font-size: 24px;
+            color: #38bda2;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        .member__info {
+            width: 300px;
+        }
+        .member__post {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .team__title {
+        font-size: 64px;
+    }
+    .team__grid {
+        width: 85%;
+    }
+}
+
+@media (max-width: 991px) {
+    .team__title {
+        font-size: 48px;
+    }
+    .team__grid {
+        width: 85%;
+    }
+    .member {
+        width: 220px;
+        .member__photo {
+            height: 300px;
+        }
+        .member__content {
+            .member__post {
+                font-size: 12px;
+            }
+            .member__info {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .team__title {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    .team__grid {
+        width: 100%;
+    }
+    .member {
+        width: 150px;
+        .member__photo {
+            height: 200px;
+        }
+        .member__content {
+            .member__post {
+                font-size: 12px;
+            }
+            .member__info {
+                width: 185px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .team__title {
+        font-size: 24px;
+    }
+    .team__grid {
+        grid-template-columns: 1fr;
+    }
+    .member {
+        width: 150px;
+        .member__photo {
+            height: 200px;
+        }
+        .member__content {
+            .member__name {
+                font-size: 18px;
+            }
+            .member__post {
+                margin-top: 3px;
+                font-size: 10px;
+            }
+            .member__info {
+                width: 150px;
+                font-size: 12px;
+            }
+        }
+    }
+}
