@@ -95,4 +95,9 @@ p,
     border-radius: 15px;
     background-color: #38bda2;
     font-weight: 500;
+    &.outlined {
+        background-color: transparent;
+        border: 1px solid #38bda2;
+        color: #38bda2;
+    }
 }
